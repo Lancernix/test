@@ -1,0 +1,33 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "husky install",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs",
+    "lint-staged": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,vue,jsx,tsx,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "keywords": [
+    "blog",
+    "vitepress",
+    "vue"
+  ],
+  "author": "Lancernix",
+  "license": "MIT",
+  "devDependencies": {
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "vitepress": "1.0.0-alpha.15",
+    "vue": "^3.2.39"
+  }
+}
